@@ -66,5 +66,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - This application was created as part of a coding challenge or project.
-
-Feel free to customize and enhance this README according to your project's specific details and requirements.
