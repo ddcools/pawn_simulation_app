@@ -1,0 +1,10 @@
+ <!-- _chessboard.html.erb -->
+<div class="chessboard">
+  <% @chessboard_array&.each_with_index do |row, row_index| %>
+    <div class="chessboard-row <%= row_index.even? ? 'even-row' : 'odd-row' %>">
+      <% row.each_with_index do |cell, col_index| %>
+        <div class="chessboard-cell <%= (row_index + col_index).even? ? 'even-cell' : 'odd-cell' %>"><%= cell %></div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

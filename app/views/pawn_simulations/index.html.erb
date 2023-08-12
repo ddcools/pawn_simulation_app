@@ -1,0 +1,21 @@
+<div class="container">
+  <%= form_tag(execute_command_pawn_simulations_path, method: :post) do %>
+    <label for="commands">Enter commands:</label><br>
+    <textarea name="commands" rows="5" cols="50" placeholder="Example: PLACE 0,0,NORTH,BLACK&#10;MOVE&#10;LEFT&#10;REPORT"></textarea><br>
+    <%= submit_tag 'Execute Commands' %>
+  <% end %>
+
+  <% if @report.present? %>
+    <div class="simulation-result">
+      <h2>Simulation Result:</h2>
+      <%= @report %>
+    </div>
+  <% end %>
+
+  <% unless @chessboard_array.blank? %>
+    <div class="chessboard">
+      <h2>Board Output:</h2>
+      <%= render partial: 'chessboard', locals: { chessboard_array: @chessboard_array } %>
+    </div>
+  <% end %>
+</div>
