@@ -23,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0'
   gem 'spring'
   gem 'web-console', '>= 4.1.0'
+  gem 'rails-controller-testing'
 end
 
 group :test do
