@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-
-/* app/assets/stylesheets/styles.css */
-
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -48,7 +45,7 @@ button {
 
 .chessboard {
   display: grid;
-  grid-template-columns: repeat(8, 50px); /* Adjust size as needed */
+  grid-template-columns: repeat(8, 50px);
   grid-gap: 1px;
   margin-top: 20px;
 }
@@ -67,7 +64,6 @@ button {
 }
 
 
-/* Add this to your CSS file or style tag in the HTML header */
 .chessboard {
   display: inline-block;
   border: 1px solid black;

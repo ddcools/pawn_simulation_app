@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :pawn_simulations, only: [:index] do
     post 'execute_command', on: :collection
   end
+
+  get '*path', to: 'errors#not_found', via: :all
 end

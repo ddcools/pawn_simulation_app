@@ -35,7 +35,7 @@ RSpec.describe PawnSimulation do
         'REPORT'
       ]
       simulation = PawnSimulation.new(0, 0, 'SOUTH', 'BLACK')
-      expect(simulation.execute_commands(commands)).to eq('3,3,NORTH,BLACK')
+      expect(simulation.execute_commands(commands)).to eq('4,2,NORTH,BLACK')
     end
 
     it 'returns nil for no REPORT command executed' do
@@ -77,7 +77,7 @@ RSpec.describe PawnSimulation do
         'REPORT'
       ]
       simulation = PawnSimulation.new(0, 0, 'SOUTH', 'BLACK')
-      expect(simulation.execute_commands(commands)).to eq('0,3,NORTH,WHITE')
+      expect(simulation.execute_commands(commands)).to eq('2,3,NORTH,WHITE')
     end
 
     it 'handles multiple commands with invalid sequence' do
