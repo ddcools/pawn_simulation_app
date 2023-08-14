@@ -2,7 +2,7 @@
   <%= form_tag(execute_command_pawn_simulations_path, method: :post) do %>
     <label for="commands">Enter commands:</label><br>
     <textarea name="commands" rows="5" cols="50" placeholder="Example: PLACE 0,0,NORTH,BLACK&#10;MOVE&#10;LEFT&#10;REPORT"></textarea><br>
-    <%= submit_tag 'Execute Commands' %>
+    <%= submit_tag 'Execute Commands', class: 'submit-button' %>
   <% end %>
 
   <% if flash[:alert] %>
