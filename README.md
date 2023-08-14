@@ -1,7 +1,5 @@
 # Pawn Simulation
 
-![Chess Board](path_to_chessboard_image.png)
-
 ## Description
 
 The Pawn Simulation application is a simulation of a pawn moving on an 8x8 chess board. The pawn can move on the board following specific rules and commands. The application prevents the pawn from falling off the board and allows it to perform various actions.
@@ -22,7 +20,7 @@ The Pawn Simulation application is a simulation of a pawn moving on an 8x8 chess
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/pawn-simulation.git`
+1. Clone the repository: `git clone https://github.com/ddcools/pawn_simulation_app.git`
 2. Navigate to the project directory: `cd pawn-simulation`
 3. Install dependencies: `bundle install`
 4. Start the server: `rails server`

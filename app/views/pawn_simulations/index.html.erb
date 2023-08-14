@@ -5,6 +5,12 @@
     <%= submit_tag 'Execute Commands' %>
   <% end %>
 
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
   <% if @report.present? %>
     <div class="simulation-result">
       <h2>Simulation Result:</h2>

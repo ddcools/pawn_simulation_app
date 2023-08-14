@@ -20,10 +20,11 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 5.0'
+  gem 'rubocop', require: false
   gem 'spring'
   gem 'web-console', '>= 4.1.0'
-  gem 'rails-controller-testing'
 end
 
 group :test do
